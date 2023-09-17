@@ -1,0 +1,76 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background: #eee;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+/* Messages */
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.sent {
+    background: #dcf8c6;
+    align-self: flex-end;
+}
+
+.received {
+    background: #fff;
+    align-self: flex-start;
+}
+
+.message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Form */
+
+form {
+    display: flex;
+    padding: 10px;
+    background: #eee;
+}
+
+input {
+    flex: 1;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    background: #555;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
